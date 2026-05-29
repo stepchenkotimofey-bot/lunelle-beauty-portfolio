@@ -207,9 +207,9 @@ select {
 .hero {
   position: relative;
   display: grid;
-  min-height: 76svh;
+  min-height: 92svh;
   overflow: hidden;
-  padding: 108px clamp(18px, 5vw, 72px) 26px;
+  padding: 118px clamp(18px, 5vw, 72px) 38px;
   color: var(--white);
   isolation: isolate;
 }
@@ -225,19 +225,22 @@ select {
 
 .hero-image {
   object-fit: cover;
-  object-position: center 45%;
+  object-position: center center;
 }
 
 .hero-shade {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(24, 25, 23, 0.66), rgba(24, 25, 23, 0.19) 55%, rgba(24, 25, 23, 0.09)),
-    linear-gradient(0deg, rgba(32, 35, 34, 0.44), rgba(32, 35, 34, 0.05) 48%);
+    linear-gradient(90deg, rgba(27, 24, 22, 0.62), rgba(27, 24, 22, 0.2) 42%, rgba(27, 24, 22, 0.06) 68%),
+    linear-gradient(0deg, rgba(31, 29, 27, 0.48), rgba(31, 29, 27, 0.02) 54%),
+    radial-gradient(circle at 8% 12%, rgba(255, 237, 218, 0.22), transparent 36%);
 }
 
 .hero-content {
   align-self: center;
-  max-width: 680px;
+  max-width: 620px;
+  padding-top: 24px;
+  text-shadow: 0 2px 24px rgba(22, 18, 15, 0.28);
 }
 
 .eyebrow,
@@ -270,8 +273,8 @@ h2 {
 }
 
 h1 {
-  margin-bottom: 24px;
-  font-size: clamp(4.2rem, 13vw, 8.7rem);
+  margin-bottom: 22px;
+  font-size: clamp(4rem, 10vw, 7.6rem);
 }
 
 h2 {
@@ -297,10 +300,11 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 150px));
   gap: 1px;
   width: min(100%, 560px);
-  margin: 32px 0 0;
+  margin: 44px 0 0;
   border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(18px);
+  background: rgba(32, 50, 45, 0.38);
+  box-shadow: 0 22px 70px rgba(28, 22, 18, 0.18);
+  backdrop-filter: blur(20px);
 }
 
 .hero-stats div {
@@ -697,7 +701,17 @@ section {
   }
 
   .menu-toggle {
-    display: inline-flex;
+    display: inline-flex !important;
+    flex: 0 0 auto;
+    background: rgba(32, 50, 45, 0.42);
+    backdrop-filter: blur(14px);
+  }
+
+  .header-actions {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    justify-self: end;
   }
 
   .header-actions .button {
@@ -745,22 +759,22 @@ section {
   }
 
   .hero {
-    min-height: 78svh;
-    padding: 92px 16px 22px;
+    min-height: 94svh;
+    padding: 92px 16px 26px;
   }
 
   .hero-image {
-    object-position: 58% center;
+    object-position: 54% center;
   }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(24, 25, 23, 0.75), rgba(24, 25, 23, 0.28)),
-      linear-gradient(0deg, rgba(32, 35, 34, 0.54), rgba(32, 35, 34, 0.05) 48%);
+      linear-gradient(90deg, rgba(24, 22, 20, 0.76), rgba(24, 22, 20, 0.34)),
+      linear-gradient(0deg, rgba(32, 35, 34, 0.64), rgba(32, 35, 34, 0.02) 54%);
   }
 
   h1 {
-    font-size: clamp(4.1rem, 23vw, 6.2rem);
+    font-size: clamp(3.8rem, 20vw, 5.4rem);
   }
 
   .hero-actions,
@@ -782,7 +796,7 @@ section {
   }
 
   .hero-stats {
-    margin-top: 22px;
+    margin-top: 28px;
   }
 
   section {
