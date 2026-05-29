@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lunelle, портфолио сайта премиального салона красоты: уходы, косметология, визаж, команда и запись."
+    />
+    <meta name="theme-color" content="#f7efe8" />
+    <title>Lunelle | Салон красоты</title>
+    <link rel="preload" href="assets/lunelle-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Lunelle">
+        <span class="brand-mark">L</span>
+        <span>Lunelle</span>
+      </a>
+
+      <nav class="main-nav" data-nav aria-label="Главная навигация">
+        <a href="#about">Салон</a>
+        <a href="#services">Уходы</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#team">Команда</a>
+        <a href="#contact">Запись</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-button ghost" href="tel:+79990000000" aria-label="Позвонить">
+          <i data-lucide="phone"></i>
+        </a>
+        <a class="button compact" href="#contact">
+          <i data-lucide="calendar-days"></i>
+          <span>Записаться</span>
+        </a>
+        <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Открыть меню">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Lunelle">
+        <img class="hero-image" src="assets/lunelle-hero.png" alt="Крем Lunelle на фактурном фоне" />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Премиальная студия ухода</p>
+          <h1>Lunelle</h1>
+          <p class="hero-copy">
+            Спокойная эстетика, точная диагностика и ритуалы красоты, которые возвращают коже свет и уверенность.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#portfolio">
+              <i data-lucide="sparkles"></i>
+              <span>Смотреть работы</span>
+            </a>
+            <a class="button secondary" href="#services">
+              <span>Выбрать уход</span>
+              <i data-lucide="arrow-down"></i>
+            </a>
+          </div>
+        </div>
+        <dl class="hero-stats" aria-label="Показатели салона">
+          <div>
+            <dt>12+</dt>
+            <dd>авторских уходов</dd>
+          </div>
+          <div>
+            <dt>4.9</dt>
+            <dd>средняя оценка</dd>
+          </div>
+          <div>
+            <dt>8</dt>
+            <dd>мастеров в команде</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="intro-section" id="about">
+        <div class="section-label">О салоне</div>
+        <div class="intro-grid">
+          <h2>Место, где уход ощущается как личный ритуал, а результат виден без лишнего шума.</h2>
+          <div class="intro-copy">
+            <p>
+              Lunelle объединяет косметологию, уход за волосами, макияж и восстановительные процедуры в одном
+              пространстве. Мы строим маршрут клиента от диагностики до домашней поддержки, сохраняя мягкий,
+              внимательный тон на каждом этапе.
+            </p>
+            <div class="signature-row">
+              <span>Тихий сервис</span>
+              <span>Чистые составы</span>
+              <span>Визуальная гармония</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">Уходы</div>
+            <h2>Процедуры для лица, волос и образа</h2>
+          </div>
+          <a class="text-link" href="#contact">Подобрать программу</a>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <i data-lucide="moon-star"></i>
+            <h3>Skin Ceremony</h3>
+            <p>Диагностика, мягкое очищение, массаж и сыворотки под состояние кожи.</p>
+            <span>от 7 500 ₽</span>
+          </article>
+          <article class="service-card">
+            <i data-lucide="waves"></i>
+            <h3>Hair Gloss</h3>
+            <p>Восстановление длины, глянец и укладка для гладкого, живого финиша.</p>
+            <span>от 5 900 ₽</span>
+          </article>
+          <article class="service-card">
+            <i data-lucide="gem"></i>
+            <h3>Evening Look</h3>
+            <p>Макияж, брови и укладка для съемки, события или камерного вечера.</p>
+            <span>от 8 200 ₽</span>
+          </article>
+          <article class="service-card">
+            <i data-lucide="leaf"></i>
+            <h3>Calm Reset</h3>
+            <p>Расслабляющий уход для лица и шеи с лимфодренажным массажем.</p>
+            <span>от 6 800 ₽</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfolio">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">Портфолио</div>
+            <h2>Подборки работ для сайта салона</h2>
+          </div>
+          <div class="filter-controls" aria-label="Фильтр портфолио">
+            <button class="chip active" type="button" data-filter="all">Все</button>
+            <button class="chip" type="button" data-filter="skin">Кожа</button>
+            <button class="chip" type="button" data-filter="hair">Волосы</button>
+            <button class="chip" type="button" data-filter="look">Образ</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item tall" data-category="skin">
+            <div class="portfolio-visual visual-cream"></div>
+            <div>
+              <span>Facial care</span>
+              <h3>Ровный тон после курса Glow Balance</h3>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="hair">
+            <div class="portfolio-visual visual-green"></div>
+            <div>
+              <span>Hair ritual</span>
+              <h3>Гладкая длина и холодный блеск</h3>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="look">
+            <div class="portfolio-visual visual-graphite"></div>
+            <div>
+              <span>Makeup</span>
+              <h3>Мягкий вечерний образ для съемки</h3>
+            </div>
+          </article>
+          <article class="portfolio-item wide" data-category="skin">
+            <div class="portfolio-visual visual-pearl"></div>
+            <div>
+              <span>Massage</span>
+              <h3>Лифтинг-массаж и спокойное сияние</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience-section">
+        <div class="experience-copy">
+          <div class="section-label">Атмосфера</div>
+          <h2>Интерьер, сервис и продукты работают как единая система бренда.</h2>
+          <p>
+            Для портфолио-сайта Lunelle важны не только процедуры, но и ощущение: светлая текстура, ясная
+            типографика, уверенная навигация и контакт, который всегда рядом.
+          </p>
+        </div>
+        <div class="experience-list">
+          <div>
+            <i data-lucide="scan-face"></i>
+            <span>Диагностика перед уходом</span>
+          </div>
+          <div>
+            <i data-lucide="timer"></i>
+            <span>Тайминг без ожиданий</span>
+          </div>
+          <div>
+            <i data-lucide="sprout"></i>
+            <span>Домашний план после визита</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section" id="team">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">Команда</div>
+            <h2>Мастера Lunelle</h2>
+          </div>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="portrait portrait-a"></div>
+            <h3>Анна Мирэль</h3>
+            <p>Косметолог, автор протокола Skin Ceremony.</p>
+          </article>
+          <article class="team-card">
+            <div class="portrait portrait-b"></div>
+            <h3>Лея Сафина</h3>
+            <p>Стилист по волосам и эксперт по восстановлению длины.</p>
+          </article>
+          <article class="team-card">
+            <div class="portrait portrait-c"></div>
+            <h3>Мария Вель</h3>
+            <p>Визажист, работает с камерными и свадебными образами.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <div class="section-label">Запись</div>
+          <h2>Выберите удобное время для визита</h2>
+          <p>Администратор Lunelle свяжется, уточнит запрос и предложит мастера под задачу.</p>
+          <div class="contact-lines">
+            <a href="tel:+79990000000"><i data-lucide="phone"></i> +7 999 000-00-00</a>
+            <a href="mailto:hello@lunelle.studio"><i data-lucide="mail"></i> hello@lunelle.studio</a>
+            <span><i data-lucide="map-pin"></i> Москва, Патриаршие пруды</span>
+          </div>
+        </div>
+
+        <form class="booking-form" data-booking-form>
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Алина" required />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 999 000-00-00" required />
+          </label>
+          <label>
+            Услуга
+            <select name="service" required>
+              <option value="">Выберите услугу</option>
+              <option>Skin Ceremony</option>
+              <option>Hair Gloss</option>
+              <option>Evening Look</option>
+              <option>Calm Reset</option>
+            </select>
+          </label>
+          <button class="button form-button" type="submit">
+            <i data-lucide="send"></i>
+            <span>Отправить заявку</span>
+          </button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Lunelle</span>
+      <span>Портфолио-концепт салона красоты</span>
+      <a href="#top">Наверх</a>
+    </footer>
+  </body>
+</html>

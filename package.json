@@ -1,0 +1,10 @@
+{
+  "name": "lunelle-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "check": "npx serve ."
+  },
+  "devDependencies": {}
+}
